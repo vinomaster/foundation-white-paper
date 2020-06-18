@@ -4,6 +4,6 @@
 
 Email xxxxxxxxxxxxx
 
-#### Contact Mental/Conceptual Models & Terminology Working Group
+#### Contact Authors
 
 Email xxxxxxxxxxx
