@@ -1,0 +1,65 @@
+site_name: 'ToIP White Paper'
+site_description: 'The ToIP Foundation White Paper focuses on how the organization structure and delivery artifacts of the open source community.'
+docs_dir: 'content'
+site_dir: 'html'
+dev_addr: '127.0.0.1:8800'
+
+nav:
+- Introduction:
+    - 'Overview': 'index.md'
+    - 'Human Trust': 'intro/human_trust.md'
+- Digital Trust Challenge:
+    - Pre-Internet Era Trust:
+        - 'Credentials': 'trust/credentials.md'
+        - 'In-Person Trust Triangle': 'trust/human_trust_triangle.md'
+        - 'Goverance Trust Triangle': 'trust/gov_trust_triangle.md'
+        - 'Trust Triangle Examples': 'trust/examples_trust_triangle.md'
+    - Internet Era and the Trust Gap:
+        - 'Moving Online': 'trust/moving_online.md'
+        - 'Login Accounts: The Accidental Actor': 'trust/login_accounts.md'
+        - 'Federating Accounts': 'trust/federated_accounts.md'
+        - 'Peer-to-Peer Trust': 'trust/p2p_trust.md'
+    - New Era of Digital Trust:
+        - 'Back to the Future with Digital Credentials': 'trust/back_to_future.md'
+        - 'Verifiable Credential Trust Triangle': 'trust/vcred_trust_triangle.md'
+        - 'Economy-Scale Digital Trust': 'trust/digital_gov_trust_triangle.md'
+- Trust over IP Stack:
+    - 'Dual Stack Design': 'stack/design.md'
+    - 'Layer One: Public Utilities': 'stack/layer1.md'
+    - 'Layer Two: Peer-to-Peer Protocol': 'stack/layer2.md'
+    - 'Layer Three: Data Exchange Protocols': 'stack/layer3.md'
+    - 'Layer Four: Application Ecosystems': 'stack/layer4.md'
+- Foundation Role and Process:
+    - 'Mission': 'organization/mission.md'
+    - 'Concepts': 'organization/concepts.md'
+    - 'Deliverables': 'organization/workproducts.md'
+    - 'Organization Structure': 'organization/structure.md'
+    - 'Join Us': 'organization/join_us.md'
+- Help:
+    - 'FAQ': 'faq.md'
+    - 'Contact us': 'contact_us.md'
+
+plugins:
+    - search
+    - pdf-export:
+        verbose: true
+        media_type: print
+        enabled_if_env: ENABLE_PDF_EXPORT
+        combined: true
+        combined_output_path: ../pdf/toip-whitepaper.pdf
+
+theme:
+    name: 'material'
+#    custom_dir: 'theme/material/'
+
+extra_css:
+    - css/extra.css
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
+
+copyright: Copyright &copy; 2020
