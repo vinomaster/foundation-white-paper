@@ -6,24 +6,27 @@
 # prepare_macos: Installs Homebrew and pip3
 # install_mkdocs: Installs Mkdocs, themes and plugins
 # pages: Builds and pushes new Github Pages and generates PDF
-# dev: Generates HTML content for localhost:8800
+# test: Runs test server using current HTML content
+# dev: Generates HTML content derived from markdown docs
 #----------------------------------------------------
 .PHONY: help prepare_macos install_mkdocs dev pages
 .DEFAULT_GOAL: help
 
 help:
 	@echo "\nToIP White Paper: Build Process Options\n"
-	@(grep -h "##" Makefile  | tail -5) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+	@(grep -h "##" Makefile  | tail -6) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 pages : ## Builds and pushes new Github Pages and generates PDF
 	rm -f ./pdf/toip-glossary.pdf
 	export ENABLE_PDF_EXPORT=1; mkdocs gh-deploy
 
-dev : ## Generates HTML content for local dev/test
+dev : ## Generates HTML content derived from markdown docs
 	export ENABLE_PDF_EXPORT=0; mkdocs build
+
+test : ## Runs test server using current HTML content
 	mkdocs serve
 
-setup : prepare_macos install_mkdocs ## Prepares Python and MkDocs Environments
+setup : prepare_macos install_mkdocs ## Prepares Python and MkDocs Environments for MacOS
 
 prepare_macos : ## Installs Homebrew and pip3
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
