@@ -81,7 +81,7 @@ git rebase upstream/master\
 ```
 
 ### Upstream Refresh Process
-This repo uses a [GitHub Workflow](.github/workflows/main.yml) process coupled with a [GitHub Action]() to automatically refresh the GitHub Pages on the ```upstream``` repo.
+This repo uses a [GitHub Workflow](.github/workflows/main.yml) process coupled with a [GitHub Action](https://github.com/marketplace/actions/mkdocs-github-deploy) to automatically refresh the GitHub Pages on the ```upstream``` repo.
 
 ## Help
 Please refer to [mkdocs-pdf-export-plugin](https://github.com/zhaoterryy/mkdocs-pdf-export-plugin) for PDF tooling configuration help.
