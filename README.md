@@ -76,8 +76,7 @@ To complete the development process, follow normal **git commit** and **git push
 Before each coding session, insure your ```fork``` and ```local-machine``` are in sync with changes made to the ```upstream``` repo.
 
 ```
-git fetch upstream
-git rebase upstream/master\
+make rebase
 ```
 
 ### Upstream Refresh Process
