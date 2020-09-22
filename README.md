@@ -1,14 +1,14 @@
-# white-paper
-Manage the development and maintenance of the Foundation level white paper. This paper focuses on how the Foundation is organized and what it will deliver.
+# ToIP Foundation White Paper
+Manage the development and maintenance of the ToIP Foundation level white paper. This paper focuses on how the Foundation is organized and what it will deliver.
 
 This repo contains the content resources for the generation of a white paper deliverable.  It contains the tools necessary to generate two document renderings (printed, online).
 
 ## Contents
 
 1. Online White Paper Access
-    * [GitHub Pages](https://trustoverip.github.io/white-paper/)
-    * [Trust over IP Website ](https://trustoverip.org/wp-content/uploads/sites/98/2020/05/toip_introduction_050520.pdf) **FIX LINK**
-2. Printable White Paper ([PDF Version](https://github.com/trustoverip/white-paper/raw/master/pdf/toip-whitepaper.pdf))
+    * [GitHub Pages](https://trustoverip.github.io/foundation-white-paper/)
+    * [Trust over IP Website ](https://trustoverip.org/wp-content/uploads/sites/98/2020/05/toip_introduction_050520.pdf)
+2. Printable White Paper ([PDF Version](https://github.com/trustoverip/foundation-white-paper/raw/master/pdf/toip-whitepaper.pdf))
 
 ## Dependencies
 * [MkDocs](https://www.mkdocs.org/)
@@ -35,9 +35,9 @@ $ make
 1. Clone repository
 
 ```
-git clone git@github.com:trustoverip/white-paper.git
+git clone git@github.com:trustoverip/foundation-white-paper.git
 git remote
-git remote add upstream git@github.com:trustoverip/white-paper.git
+git remote add upstream git@github.com:trustoverip/foundation-white-paper.git
 git remote
 ```
 
